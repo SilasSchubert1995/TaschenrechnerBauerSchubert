@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Taschenrechner
 {
-    public partial class Form1 : Form
+    public partial class Taschenrechner : Form
     {
-        public Form1()
+        public Taschenrechner()
         {
             InitializeComponent();
         }
 
         private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
         {
 
         }
