@@ -52,7 +52,7 @@
             this.Ergebnislabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Ergebnislabel.Location = new System.Drawing.Point(13, 13);
             this.Ergebnislabel.Name = "Ergebnislabel";
-            this.Ergebnislabel.Size = new System.Drawing.Size(297, 44);
+            this.Ergebnislabel.Size = new System.Drawing.Size(287, 44);
             this.Ergebnislabel.TabIndex = 0;
             this.Ergebnislabel.Text = "Zahlen";
             // 
@@ -65,6 +65,7 @@
             this.zahl1Button.TabIndex = 1;
             this.zahl1Button.Text = "1";
             this.zahl1Button.UseVisualStyleBackColor = true;
+            this.zahl1Button.Click += new System.EventHandler(this.zahl1Button_Click);
             // 
             // zahl2Button
             // 

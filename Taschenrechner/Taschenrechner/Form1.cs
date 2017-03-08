@@ -26,5 +26,10 @@ namespace Taschenrechner
         {
 
         }
+
+        private void zahl1Button_Click(object sender, EventArgs e)
+        {
+            Ergebnislabel.Text = Ergebnislabel.Text + "1";
+        }
     }
 }
