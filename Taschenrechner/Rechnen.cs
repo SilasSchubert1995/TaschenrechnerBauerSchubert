@@ -9,27 +9,28 @@ public class Rechnen
         int ergebnis = 0;
 	}
 
-    public static Addieren()
+    public void Addieren()
     {
-        Addieren(variabl1, variable2, ergebnis, ergebnis = variable1 + variable2);
-        return ergebnis;
+        ergebnis = variable1 + variable2;
     }
 
-    public static Subtrahieren()
+    public void Subtrahieren()
     {
-        Subtrahieren(variabl1, variable2, ergebnis, ergebnis = variable1 - variable2);
-        return ergebnis;
+        ergebnis = variable1 - variable2;
     }
 
-    public static Multiplizieren()
+    public void Multiplizieren()
     {
-        Multiplizieren(variabl1, variable2, ergebnis, ergebnis = variable1 * variable2);
-        return ergebnis;
+        ergebnis = variable1 * variable2;
     }
 
-    public static Dividieren()
+    public void Dividieren()
     {
-        Dividieren(variabl1, variable2, ergebnis, ergebnis = variable1 / variable2);
+        ergebnis = variable1 / variable2;
+    }
+
+    public int Ergebnisübergabe()
+    {
         return ergebnis;
     }
 }
