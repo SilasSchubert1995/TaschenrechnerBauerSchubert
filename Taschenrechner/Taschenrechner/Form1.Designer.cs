@@ -164,6 +164,7 @@
             this.zahlAddierenButton.TabIndex = 10;
             this.zahlAddierenButton.Text = "+";
             this.zahlAddierenButton.UseVisualStyleBackColor = true;
+            this.zahlAddierenButton.Click += new System.EventHandler(this.zahlAddierenButton_Click);
             // 
             // zahlSubtrahierenButton
             // 
@@ -174,6 +175,7 @@
             this.zahlSubtrahierenButton.TabIndex = 11;
             this.zahlSubtrahierenButton.Text = "-";
             this.zahlSubtrahierenButton.UseVisualStyleBackColor = true;
+            this.zahlSubtrahierenButton.Click += new System.EventHandler(this.zahlSubtrahierenButton_Click);
             // 
             // zahlMultiplizierenButton
             // 
@@ -184,6 +186,7 @@
             this.zahlMultiplizierenButton.TabIndex = 12;
             this.zahlMultiplizierenButton.Text = "*";
             this.zahlMultiplizierenButton.UseVisualStyleBackColor = true;
+            this.zahlMultiplizierenButton.Click += new System.EventHandler(this.zahlMultiplizierenButton_Click);
             // 
             // zahlDividierenButton
             // 
@@ -194,6 +197,7 @@
             this.zahlDividierenButton.TabIndex = 13;
             this.zahlDividierenButton.Text = ":";
             this.zahlDividierenButton.UseVisualStyleBackColor = true;
+            this.zahlDividierenButton.Click += new System.EventHandler(this.zahlDividierenButton_Click);
             // 
             // zahl0Button
             // 
@@ -215,6 +219,7 @@
             this.ergebnisButton.TabIndex = 15;
             this.ergebnisButton.Text = "=";
             this.ergebnisButton.UseVisualStyleBackColor = true;
+            this.ergebnisButton.Click += new System.EventHandler(this.ergebnisButton_Click);
             // 
             // löschenButton
             // 

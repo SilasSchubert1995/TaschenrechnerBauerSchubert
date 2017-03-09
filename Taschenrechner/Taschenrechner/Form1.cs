@@ -14,7 +14,7 @@ namespace Taschenrechner
     {
         public Taschenrechner()
         {
-            InitializeComponent();
+            InitializeComponent();  
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -90,9 +90,35 @@ namespace Taschenrechner
             Ergebnislabel.Text = Leerfeld;
         }
 
-        private void zahl1Button_Click(object sender, EventArgs e)
+        private void zahlAddierenButton_Click(object sender, EventArgs e)
         {
-            Ergebnislabel.Text = Ergebnislabel.Text + "1";
+            Rechnen RechnenAdd = new Rechnen();
+            RechnenAdd.Addieren();
         }
+
+        private void zahlSubtrahierenButton_Click(object sender, EventArgs e)
+        {
+            Rechnen RechnenSub = new Rechnen();
+            RechnenSub.Subtrahieren();
+        }
+
+        private void zahlMultiplizierenButton_Click(object sender, EventArgs e)
+        {
+            Rechnen RechnenMul = new Rechnen();
+            RechnenMul.Multiplizieren();
+        }
+
+        private void zahlDividierenButton_Click(object sender, EventArgs e)
+        {
+            Rechnen RechnenDiv = new Rechnen();
+            RechnenDiv.Dividieren();
+        }
+
+        private void ergebnisButton_Click(object sender, EventArgs e)
+        {
+            Rechnen RechnenErg = new Rechnen();
+            RechnenErg.Ergebnisübergabe();
+        }
+
     }
 }
