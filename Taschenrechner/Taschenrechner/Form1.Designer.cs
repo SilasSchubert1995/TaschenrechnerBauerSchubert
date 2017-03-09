@@ -54,7 +54,7 @@
             this.Ergebnislabel.Name = "Ergebnislabel";
             this.Ergebnislabel.Size = new System.Drawing.Size(297, 44);
             this.Ergebnislabel.TabIndex = 0;
-            this.Ergebnislabel.Text = "Zahlen";
+            this.Ergebnislabel.Click += new System.EventHandler(this.Ergebnislabel_Click);
             // 
             // zahl1Button
             // 
@@ -65,6 +65,7 @@
             this.zahl1Button.TabIndex = 1;
             this.zahl1Button.Text = "1";
             this.zahl1Button.UseVisualStyleBackColor = true;
+            this.zahl1Button.Click += new System.EventHandler(this.zahl1Button_Click);
             // 
             // zahl2Button
             // 
@@ -75,6 +76,7 @@
             this.zahl2Button.TabIndex = 2;
             this.zahl2Button.Text = "2";
             this.zahl2Button.UseVisualStyleBackColor = true;
+            this.zahl2Button.Click += new System.EventHandler(this.zahl2Button_Click);
             // 
             // zahl3Button
             // 
@@ -85,6 +87,7 @@
             this.zahl3Button.TabIndex = 3;
             this.zahl3Button.Text = "3";
             this.zahl3Button.UseVisualStyleBackColor = true;
+            this.zahl3Button.Click += new System.EventHandler(this.zahl3Button_Click);
             // 
             // zahl4Button
             // 
@@ -95,6 +98,7 @@
             this.zahl4Button.TabIndex = 4;
             this.zahl4Button.Text = "4";
             this.zahl4Button.UseVisualStyleBackColor = true;
+            this.zahl4Button.Click += new System.EventHandler(this.zahl4Button_Click);
             // 
             // zahl5Button
             // 
@@ -105,6 +109,7 @@
             this.zahl5Button.TabIndex = 5;
             this.zahl5Button.Text = "5";
             this.zahl5Button.UseVisualStyleBackColor = true;
+            this.zahl5Button.Click += new System.EventHandler(this.zahl5Button_Click);
             // 
             // zahl6Button
             // 
@@ -115,6 +120,7 @@
             this.zahl6Button.TabIndex = 6;
             this.zahl6Button.Text = "6";
             this.zahl6Button.UseVisualStyleBackColor = true;
+            this.zahl6Button.Click += new System.EventHandler(this.zahl6Button_Click);
             // 
             // zahl7Button
             // 
@@ -125,6 +131,7 @@
             this.zahl7Button.TabIndex = 7;
             this.zahl7Button.Text = "7";
             this.zahl7Button.UseVisualStyleBackColor = true;
+            this.zahl7Button.Click += new System.EventHandler(this.zahl7Button_Click);
             // 
             // zahl8Button
             // 
@@ -146,6 +153,7 @@
             this.zahl9Button.TabIndex = 9;
             this.zahl9Button.Text = "9";
             this.zahl9Button.UseVisualStyleBackColor = true;
+            this.zahl9Button.Click += new System.EventHandler(this.zahl9Button_Click);
             // 
             // zahlAddierenButton
             // 
@@ -196,6 +204,7 @@
             this.zahl0Button.TabIndex = 14;
             this.zahl0Button.Text = "0";
             this.zahl0Button.UseVisualStyleBackColor = true;
+            this.zahl0Button.Click += new System.EventHandler(this.zahl0Button_Click);
             // 
             // ergebnisButton
             // 
@@ -216,6 +225,7 @@
             this.löschenButton.TabIndex = 16;
             this.löschenButton.Text = "<-";
             this.löschenButton.UseVisualStyleBackColor = true;
+            this.löschenButton.Click += new System.EventHandler(this.löschenButton_Click);
             // 
             // Taschenrechner
             // 
