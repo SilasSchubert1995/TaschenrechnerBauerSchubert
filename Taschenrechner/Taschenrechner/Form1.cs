@@ -14,8 +14,14 @@ namespace Taschenrechner
     {
         public Taschenrechner()
         {
-            InitializeComponent();
+            InitializeComponent();  
         }
+
+        int variable1;
+        int variable2;
+        int ergebnis;
+
+
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -89,5 +95,71 @@ namespace Taschenrechner
             string Leerfeld = " ";
             Ergebnislabel.Text = Leerfeld;
         }
+
+        private void zahlAddierenButton_Click(object sender, EventArgs e)
+        {
+            variable1 = Convert.ToInt32(Ergebnislabel.Text);
+            //Rechnen rechnenAdd = new Rechnen();
+            //rechnenAdd.Addieren(1,1);
+           
+        }
+
+        private void zahlSubtrahierenButton_Click(object sender, EventArgs e)
+        {
+            //Rechnen RechnenSub = new Rechnen();
+            //RechnenSub.Subtrahieren();
+        }
+
+        private void zahlMultiplizierenButton_Click(object sender, EventArgs e)
+        {
+            //Rechnen RechnenMul = new Rechnen();
+            //RechnenMul.Multiplizieren();
+        }
+
+        private void zahlDividierenButton_Click(object sender, EventArgs e)
+        {
+            //Rechnen RechnenDiv = new Rechnen();
+            //RechnenDiv.Dividieren();
+        }
+
+        private void ergebnisButton_Click(object sender, EventArgs e)
+        {
+            Rechnen RechnenErg = new Rechnen();
+
+            int result = RechnenErg.Ergebnisübergabe(1,2);
+
+            string resultS = Convert.ToString(result);
+
+            Ergebnislabel.Text = resultS;  
+        }
+
+        public void Addieren()
+        {
+
+            ergebnis = variable1 + variable2;
+        }
+
+        public void Subtrahieren()
+        {
+            ergebnis = variable1 - variable2;
+        }
+
+        public void Multiplizieren()
+        {
+            ergebnis = variable1 * variable2;
+        }
+
+        public void Dividieren()
+        {
+            ergebnis = variable1 / variable2;
+        }
+
+        public int Ergebnisübergabe()
+        {
+            
+            return ergebnis;
+        }
+
+
     }
 }

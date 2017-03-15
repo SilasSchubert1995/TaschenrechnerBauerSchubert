@@ -11,26 +11,31 @@ public class Rechnen
 
     public void Addieren()
     {
+        variable1 = Ergebnislabel.Text();
         ergebnis = variable1 + variable2;
     }
 
     public void Subtrahieren()
     {
+        variable1 = Ergebnislabel.Text();
         ergebnis = variable1 - variable2;
     }
 
     public void Multiplizieren()
     {
+        variable1 = Ergebnislabel.Text();
         ergebnis = variable1 * variable2;
     }
 
     public void Dividieren()
     {
+        variable1 = Ergebnislabel.Text();
         ergebnis = variable1 / variable2;
     }
 
     public int Ergebnisübergabe()
     {
+        variable2 = Ergebnislabel.Text();
         return ergebnis;
     }
 }
