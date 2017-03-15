@@ -92,8 +92,7 @@ namespace Taschenrechner
 
         private void löschenButton_Click(object sender, EventArgs e)
         {
-            string Leerfeld = " ";
-            Ergebnislabel.Text = Leerfeld;
+            
         }
 
         private void zahlAddierenButton_Click(object sender, EventArgs e)
