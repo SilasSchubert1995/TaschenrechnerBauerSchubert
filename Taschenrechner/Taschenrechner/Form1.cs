@@ -98,6 +98,7 @@ namespace Taschenrechner
         private void zahlAddierenButton_Click(object sender, EventArgs e)
         {
             variable1 = Convert.ToInt32(Ergebnislabel.Text);
+            Ergebnislabel.Text = "";
             //Rechnen rechnenAdd = new Rechnen();
             //rechnenAdd.Addieren(1,1);
            
@@ -123,13 +124,17 @@ namespace Taschenrechner
 
         private void ergebnisButton_Click(object sender, EventArgs e)
         {
-            Rechnen RechnenErg = new Rechnen();
+            variable2 = Convert.ToInt32(Ergebnislabel.Text);
+            Addieren(); // Bool abfrage ja/nein
+            Ergebnislabel.Text = "";
+            Ergebnislabel.Text = Convert.ToString(ergebnis);
+            //Rechnen RechnenErg = new Rechnen();
 
-            int result = RechnenErg.Ergebnisübergabe(1,2);
+            //int result = RechnenErg.Ergebnisübergabe(1,2);
 
-            string resultS = Convert.ToString(result);
+            //string resultS = Convert.ToString(result);
 
-            Ergebnislabel.Text = resultS;  
+            //Ergebnislabel.Text = resultS;  
         }
 
         public void Addieren()
