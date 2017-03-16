@@ -45,6 +45,7 @@
             this.zahl0Button = new System.Windows.Forms.Button();
             this.ergebnisButton = new System.Windows.Forms.Button();
             this.löschenButton = new System.Windows.Forms.Button();
+            this.kommaButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Ergebnislabel
@@ -232,11 +233,23 @@
             this.löschenButton.UseVisualStyleBackColor = true;
             this.löschenButton.Click += new System.EventHandler(this.löschenButton_Click);
             // 
+            // kommaButton
+            // 
+            this.kommaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kommaButton.Location = new System.Drawing.Point(307, 80);
+            this.kommaButton.Name = "kommaButton";
+            this.kommaButton.Size = new System.Drawing.Size(60, 60);
+            this.kommaButton.TabIndex = 17;
+            this.kommaButton.Text = ",";
+            this.kommaButton.UseVisualStyleBackColor = true;
+            this.kommaButton.Click += new System.EventHandler(this.kommaButton_Click);
+            // 
             // Taschenrechner
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 345);
+            this.ClientSize = new System.Drawing.Size(373, 345);
+            this.Controls.Add(this.kommaButton);
             this.Controls.Add(this.löschenButton);
             this.Controls.Add(this.ergebnisButton);
             this.Controls.Add(this.zahl0Button);
@@ -280,6 +293,7 @@
         private System.Windows.Forms.Button zahl0Button;
         private System.Windows.Forms.Button ergebnisButton;
         private System.Windows.Forms.Button löschenButton;
+        private System.Windows.Forms.Button kommaButton;
     }
 }
 

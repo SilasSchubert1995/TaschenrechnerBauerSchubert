@@ -16,12 +16,13 @@ namespace Taschenrechner
         {
             InitializeComponent();  
         }
-
-        int variable1;
-        int variable2;
-        int ergebnis;
-
-
+        double zahl1;
+        double zahl2;
+        double ergebnis;
+        bool rechnenAdd = false;
+        bool rechnenSub = false;
+        bool rechnenMul = false;
+        bool rechnenDiv = false;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -97,73 +98,86 @@ namespace Taschenrechner
 
         private void zahlAddierenButton_Click(object sender, EventArgs e)
         {
-            variable1 = Convert.ToInt32(Ergebnislabel.Text);
+            zahl1 = Convert.ToDouble(Ergebnislabel.Text);
             Ergebnislabel.Text = "";
-            //Rechnen rechnenAdd = new Rechnen();
-            //rechnenAdd.Addieren(1,1);
-           
+            rechnenAdd = true;
+
         }
 
         private void zahlSubtrahierenButton_Click(object sender, EventArgs e)
         {
-            //Rechnen RechnenSub = new Rechnen();
-            //RechnenSub.Subtrahieren();
+            zahl1 = Convert.ToDouble(Ergebnislabel.Text);
+            Ergebnislabel.Text = "";
+            rechnenSub = true;
         }
 
         private void zahlMultiplizierenButton_Click(object sender, EventArgs e)
         {
-            //Rechnen RechnenMul = new Rechnen();
-            //RechnenMul.Multiplizieren();
+            zahl1 = Convert.ToDouble(Ergebnislabel.Text);
+            Ergebnislabel.Text = "";
+            rechnenMul = true;
         }
 
         private void zahlDividierenButton_Click(object sender, EventArgs e)
         {
-            //Rechnen RechnenDiv = new Rechnen();
-            //RechnenDiv.Dividieren();
+            zahl1 = Convert.ToDouble(Ergebnislabel.Text);
+            Ergebnislabel.Text = "";
+            rechnenDiv = true;
         }
 
         private void ergebnisButton_Click(object sender, EventArgs e)
         {
-            variable2 = Convert.ToInt32(Ergebnislabel.Text);
-            Addieren(); // Bool abfrage ja/nein
+            zahl2 = Convert.ToDouble(Ergebnislabel.Text);
+            if (rechnenAdd == true)
+            {
+                Addieren();
+            }
+            if (rechnenSub == true)
+            {
+                Subtrahieren();
+            }
+            if (rechnenMul == true)
+            {
+                Multiplizieren();
+            }
+            if (rechnenDiv == true)
+            {
+                Dividieren();
+            }
             Ergebnislabel.Text = "";
             Ergebnislabel.Text = Convert.ToString(ergebnis);
-            //Rechnen RechnenErg = new Rechnen();
-
-            //int result = RechnenErg.Ergebnisübergabe(1,2);
-
-            //string resultS = Convert.ToString(result);
-
-            //Ergebnislabel.Text = resultS;  
         }
 
         public void Addieren()
         {
 
-            ergebnis = variable1 + variable2;
+            ergebnis = zahl1 + zahl2;
         }
 
         public void Subtrahieren()
         {
-            ergebnis = variable1 - variable2;
+            ergebnis = zahl1 - zahl2;
         }
 
         public void Multiplizieren()
         {
-            ergebnis = variable1 * variable2;
+            ergebnis = zahl1 * zahl2;
         }
 
         public void Dividieren()
         {
-            ergebnis = variable1 / variable2;
+            ergebnis = zahl1 / zahl2;
         }
 
-        public int Ergebnisübergabe()
+        public double Ergebnisübergabe()
         {
             
             return ergebnis;
         }
 
-
+        private void kommaButton_Click(object sender, EventArgs e)
+        {
+            Ergebnislabel.Text = Ergebnislabel.Text + ",";
+        }
     }
 }
