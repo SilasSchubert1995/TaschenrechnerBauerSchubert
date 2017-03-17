@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Taschenrechner
@@ -23,6 +16,7 @@ namespace Taschenrechner
         bool rechnenSub = false;
         bool rechnenMul = false;
         bool rechnenDiv = false;
+        string entfernen;
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -93,7 +87,8 @@ namespace Taschenrechner
 
         private void löschenButton_Click(object sender, EventArgs e)
         {
-            
+            entfernen = Ergebnislabel.Text;
+            Ergebnislabel.Text = entfernen.Remove(entfernen.Length - 1, 1);
         }
 
         private void zahlAddierenButton_Click(object sender, EventArgs e)
@@ -101,7 +96,6 @@ namespace Taschenrechner
             zahl1 = Convert.ToDouble(Ergebnislabel.Text);
             Ergebnislabel.Text = "";
             rechnenAdd = true;
-
         }
 
         private void zahlSubtrahierenButton_Click(object sender, EventArgs e)
