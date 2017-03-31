@@ -16,21 +16,19 @@ namespace Taschenrechner
         bool rechnenSub = false;
         bool rechnenMul = false;
         bool rechnenDiv = false;
-        string entfernen;
+        string entfernenZahl;
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void button8_Click(object sender, EventArgs e)              // Zahleingabe per Button
         {
             Ergebnislabel.Text = Ergebnislabel.Text + "8";
         }
 
         private void Ergebnislabel_Click(object sender, EventArgs e)
         {
-
         }
 
         private void zahl1Button_Click(object sender, EventArgs e)
@@ -75,51 +73,44 @@ namespace Taschenrechner
 
         private void zahl0Button_Click(object sender, EventArgs e)
         {
-
-            //if (Ergebnislabel.Text = "0")
-            //{
-            //    MessageBox.Show("Fehler bei der Eingabe");
-
-            //}
-
             Ergebnislabel.Text = Ergebnislabel.Text + "0";
         }
 
-        private void löschenButton_Click(object sender, EventArgs e)
+        private void löschenButton_Click(object sender, EventArgs e)        // Löschbutton (eine Zahl)
         {
-            entfernen = Ergebnislabel.Text;
-            Ergebnislabel.Text = entfernen.Remove(entfernen.Length - 1, 1);
+            entfernenZahl = Ergebnislabel.Text;
+            Ergebnislabel.Text = entfernenZahl.Remove(entfernenZahl.Length - 1, 1);
         }
 
-        private void zahlAddierenButton_Click(object sender, EventArgs e)
+        private void zahlAddierenButton_Click(object sender, EventArgs e)   // Addierbutton
         {
             zahl1 = Convert.ToDouble(Ergebnislabel.Text);
             Ergebnislabel.Text = "";
             rechnenAdd = true;
         }
 
-        private void zahlSubtrahierenButton_Click(object sender, EventArgs e)
+        private void zahlSubtrahierenButton_Click(object sender, EventArgs e)   // Subtrahierbutton
         {
             zahl1 = Convert.ToDouble(Ergebnislabel.Text);
             Ergebnislabel.Text = "";
             rechnenSub = true;
         }
 
-        private void zahlMultiplizierenButton_Click(object sender, EventArgs e)
+        private void zahlMultiplizierenButton_Click(object sender, EventArgs e)     // Multiplizierbutton
         {
             zahl1 = Convert.ToDouble(Ergebnislabel.Text);
             Ergebnislabel.Text = "";
             rechnenMul = true;
         }
 
-        private void zahlDividierenButton_Click(object sender, EventArgs e)
+        private void zahlDividierenButton_Click(object sender, EventArgs e)     // Dividierbutton
         {
             zahl1 = Convert.ToDouble(Ergebnislabel.Text);
             Ergebnislabel.Text = "";
             rechnenDiv = true;
         }
 
-        private void ergebnisButton_Click(object sender, EventArgs e)
+        private void ergebnisButton_Click(object sender, EventArgs e)           // Ergbenisbutton, Ausgabe im Ergebnislabel
         {
             zahl2 = Convert.ToDouble(Ergebnislabel.Text);
             if (rechnenAdd == true)
@@ -142,34 +133,32 @@ namespace Taschenrechner
             Ergebnislabel.Text = Convert.ToString(ergebnis);
         }
 
-        public void Addieren()
+        public void Addieren()              // Methode zum Addieren
         {
-
             ergebnis = zahl1 + zahl2;
         }
 
-        public void Subtrahieren()
+        public void Subtrahieren()              // Methode zum Subtrahieren
         {
             ergebnis = zahl1 - zahl2;
         }
 
-        public void Multiplizieren()
+        public void Multiplizieren()              // Methode zum Multiplizieren
         {
             ergebnis = zahl1 * zahl2;
         }
 
-        public void Dividieren()
+        public void Dividieren()              // Methode zum Dividieren
         {
             ergebnis = zahl1 / zahl2;
         }
 
-        public double Ergebnisübergabe()
+        public double Ergebnisübergabe()        // Ergebnisübergabe
         {
-            
             return ergebnis;
         }
 
-        private void kommaButton_Click(object sender, EventArgs e)
+        private void kommaButton_Click(object sender, EventArgs e)  // Button für das Komma
         {
             Ergebnislabel.Text = Ergebnislabel.Text + ",";
         }
