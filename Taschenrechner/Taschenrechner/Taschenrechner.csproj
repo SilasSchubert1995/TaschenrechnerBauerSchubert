@@ -47,16 +47,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TaschenrechnerForm.cs">
+    <Compile Include="Taschenrechner.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TaschenrechnerForm.Designer.cs">
-      <DependentUpon>TaschenrechnerForm.cs</DependentUpon>
+    <Compile Include="Taschenrechner.Designer.cs">
+      <DependentUpon>Taschenrechner.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="TaschenrechnerForm.resx">
-      <DependentUpon>TaschenrechnerForm.cs</DependentUpon>
+    <EmbeddedResource Include="Taschenrechner.resx">
+      <DependentUpon>Taschenrechner.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
